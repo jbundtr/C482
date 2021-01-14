@@ -1,0 +1,10 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="InventoryProgram" type="Application" factoryName="Application" nameIsGenerated="true">
+    <option name="MAIN_CLASS_NAME" value="Main.InventoryProgram" />
+    <module name="Test2" />
+    <option name="VM_PARAMETERS" value="--module-path &quot;$PATH_TO_FX$/lib&quot; --add-modules javafx.controls,javafx.fxml,javafx.graphics,javafx.web" />
+    <method v="2">
+      <option name="Make" enabled="true" />
+    </method>
+  </configuration>
+</component>
