@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<!--    fx:controller="View_controller.AddPartController"-->
+   <children>
+      <Pane layoutX="32.0" layoutY="93.0" prefHeight="178.0" prefWidth="601.0" style="-fx-background-color: lightgrey; -fx-background-radius: 10;">
+         <children>
+            <TextField fx:id="id" disable="true" editable="false" layoutX="111.0" layoutY="14.0" />
+            <TextField fx:id="name" layoutX="111.0" layoutY="39.0" onMouseClicked="#clearTextFieldOnClick" />
+            <TextField fx:id="stock" layoutX="111.0" layoutY="64.0" onMouseClicked="#clearTextFieldOnClick" />
+            <TextField fx:id="price" layoutX="111.0" layoutY="89.0" onMouseClicked="#clearTextFieldOnClick" />
+            <TextField fx:id="min" layoutX="111.0" layoutY="114.0" onMouseClicked="#clearTextFieldOnClick" />
+            <TextField fx:id="companyName" layoutX="111.0" layoutY="139.0" onMouseClicked="#clearTextFieldOnClick" />
+            <TextField fx:id="max" layoutX="301.0" layoutY="114.0" onMouseClicked="#clearTextFieldOnClick" />
+            <Label layoutX="271.0" layoutY="117.0" text="Max" />
+            <Label layoutX="15.0" layoutY="17.0" text="ID" />
+            <Label layoutX="15.0" layoutY="67.0" text="Stock" />
+            <Label layoutX="15.0" layoutY="92.0" text="Price" />
+            <Label layoutX="15.0" layoutY="42.0" text="Name" />
+            <Label layoutX="15.0" layoutY="117.0" text="Min" />
+            <Label fx:id="companyLabel" layoutX="15.0" layoutY="144.0" text="Label" />
+         </children></Pane>
+      <RadioButton fx:id="inHouseRadioButton" layoutX="190.0" layoutY="72.0" mnemonicParsing="false" onMouseClicked="#selectInHousePart" selected="true" text="In House">
+         <toggleGroup>
+            <ToggleGroup fx:id="type" />
+         </toggleGroup></RadioButton>
+      <RadioButton fx:id="outSourcedRadioButton" layoutX="312.0" layoutY="72.0" mnemonicParsing="false" onMouseClicked="#selectOutsourcedPart" text="Outsourced" toggleGroup="$type" />
+      <Label fx:id="Parts" layoutX="83.0" layoutY="72.0" text="Parts">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <Button fx:id="submitButton" layoutX="330.0" layoutY="280.0" mnemonicParsing="false" onMouseClicked="#saveAddPart" text="Save" />
+      <Button fx:id="cancelButton" layoutX="400.0" layoutY="280.0" mnemonicParsing="false" onMouseClicked="#cancelAddPart" text="Cancel" />
+   </children>
+</AnchorPane>
